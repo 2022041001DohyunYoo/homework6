@@ -268,10 +268,10 @@ int deleteFirst(headNode* h) { //리스트의 처음 위치의 노드 삭제
 int deleteNode(headNode* h, int key) {
     
 
-if (h->first == NULL)
+if (h->first == NULL) //리스트가 비어있으면면
 	{
-		printf("리스트가 비어 있음\n");
-		return 0;
+		printf("리스트가 비어 있음\n");//출력
+		return 0;//함수 강제종료
 	}
 
 	listNode* cur = h->first;//현재 노드 가리키는 포인터
